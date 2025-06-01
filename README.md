@@ -42,3 +42,15 @@ Certifique-se de instalar as dependências necessárias listadas no `requirement
 discord.py
 requests
 python-dotenv
+
+## 🔥 Novidades na v1.2.0
+
+- Novo comando: `/ranked`
+  - Mostra dados do modo competitivo do jogador (nível, vitórias, partidas e taxa de vitória).
+  - Mostra a **taxa de headshots (%HS) da última partida**.
+
+### ⚠️ Observações técnicas
+- O cálculo da Taxa de HS só é possível para **a última partida** devido a limitações da API da HenrikDev:
+  - Não há suporte eficiente para cálculo histórico completo.
+  - A estrutura JSON exigiria processamento excessivo e iteração por dezenas de partidas manualmente.
+
