@@ -12,14 +12,22 @@ RogersBot é um bot de Discord simples e funcional que permite consultar o **elo
 Comando simples que retorna a **latência atual do bot** no servidor. Útil para verificar se o bot está responsivo.
 
 ### 🎮 Comando `/info <nickname> <tag>`
-Este é o **principal comando** do bot. Ele retorna um embed contendo:
+Este é o **primeiro comando** do bot. Ele retorna um embed contendo informações básicas de carreira de um jogador:
 
 - 🌎 Região do jogador
 - ⭐ Nível da conta
 - 🏆 Elo atual (ex: Gold 1)
 - 📈 Progresso no elo atual (em %)
-- 🔝 Maior elo já atingido pela conta
+- 👑 Maior elo já atingido pela conta
 
+### ⚔️ Comando `/ranked <nickname> <tag>`
+Este é o **segundo comando** do bot. Ele retorna um embed contendo as principais informações do modo **Competitivo** de um jogador:
+
+- ⭐ Nível da Conta
+- 🎮 Partidas jogadas
+- 💯 Partidas vencidas
+- 📊 Taxa de Vitória
+- 💪%HS na última partida competitiva
 ---
 
 ## 🧩 Estrutura do Projeto
@@ -43,7 +51,12 @@ discord.py
 requests
 python-dotenv
 
-## 🔥 Novidades na v1.2.0
+---
+
+## ✔️ Atualizações
+
+```
+### 🔥 Novidades na v1.2.0
 
 - Novo comando: `/ranked`
   - Mostra dados do modo competitivo do jogador (nível, vitórias, partidas e taxa de vitória).
