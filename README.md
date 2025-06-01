@@ -50,12 +50,11 @@ Certifique-se de instalar as dependências necessárias listadas no `requirement
 discord.py
 requests
 python-dotenv
-
+```
 ---
 
 ## ✔️ Atualizações
 
-```
 ### 🔥 Novidades na v1.2.0
 
 - Novo comando: `/ranked`
